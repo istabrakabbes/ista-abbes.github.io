@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Portfolio of istabrak Abbes</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+      <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+      <script>
+         $(document).ready(function() {
+         
+           $(".showMore").on("click", function() {
+         
+             var $this = $(this);
+         
+             var content = $this.prev()
+             var linkText = $this.text().toUpperCase();
+         
+             if (linkText === "SHOW MORE") {
+               linkText = "Show less";
+               content.addClass("showContent", 400).removeClass("hideContent", 400);
+             } else {
+               content.addClass("hideContent", 400).removeClass("showContent", 400);
+               linkText = "Show more";
+             }
+         
+             $this.text(linkText);
+           });
+         
+         });
+           
+      </script>
+   </head>
+   <body>
+      <div class="wrapper">
+         <header>
+            <h1>
+               <p align="center"> Istabrak Abbes </p>
+            </h1>
+            <img src="images/logo.jpg?raw=true" class="profile" alt="Logo" />
+            <p>
+               <h3>
+                  <p align="center"> <a href="mailto:istabrak.abbes@mila.quebec">istabrak.abbes@mila.quebec</a>  </p>
+               </h3>
+            <p align="center"> <a href="mailto:istabrak.abbes@mila.quebec">Email</a> | <a href="https://www.linkedin.com/in/istabrak-abbes/">LinkedIn</a> | <a href="https://github.com/istabrak-abbes">GitHub</a> </p>
+            <p align="justify"> I am a Master of Science student at Mila - Quebec Artificial Intelligence Institute and at the University of Montreal, working with Prof. Sarath Chandar.<br /><br /></p>
+         </header>
+         <section>
+
+            <h1>Education</h1>
+            <hr />
+            <h3>M.SC in computer science</h3>
+            <h4><em>Université de Montréal</em></h4>
+            <p><a href="https://www.iro.umontreal.ca/~slacoste/teaching/ift6269/A23/"><img src="https://img.shields.io/badge/UDEM-IFT6269-purple.svg" alt="IFT6269" /></a>
+            <a href="https://chandar-lab.github.io/INF8250AE/"><img src="https://img.shields.io/badge/PolyMtl-INF8250AE-blue.svg" alt="INF8250AE" /></a></p>
+
+            <div style="text-align: justify">This graduate-level courses is a comprehensive introduction to data mining that covers data munging, machine learning algorithms, mining of graphs and streams, and big data.</div>
+            <li>Lecturer: Fall 2019, Summer 2020, Fall 2020, Fall 2022</li>
+            <li>Teacher Assistant: Summer 2021, Fall 2021</li>
+            <hr />
+            <h3>Software engineering degree</h3>
+            <h4><em>National Engineering School of Tunis, University of Tunis El Manar</em></h4>
+            <div style="text-align: justify">This graduate-level course is a comprehensive introduction to artificial intelligence that covers local search, A*, constraint satisfaction problems, supervised and unsupervised learning, as well as reinforcement learning.</div>
+            <li>Teacher Assistant: Fall 2018</li>
+            <p><br /><br /></p>
+            <h1>Publications</h1>
+            <hr />
+            <h3>Context-aware Language Modeling for Arabic Misogyny Identification</h3>
+            <h4><em>Istabrak Abbes, Eya Nakache and Moez BenHajHmida</em></h4>
+            <p><a href="https://ceur-ws.org/Vol-3159/T5-4.pdf"><img src="https://img.shields.io/badge/PDF-download-blue.svg" alt="Download" /></a></p>
+            <div class="hideContent">
+               <div class="post-text"> Most Arabic interactions in media (TV, radio, etc), and on the internet (social media, forums) are produced in local dialects. Dialectal Arabic (DA) is significantly different from the formal
+                  Arabic language, known as Modern Standard Arabic (MSA). Especially on social media, we observe various dialects and free writing forms that make the Natural Language Processing
+                  task more complicated.
+                  Misogyny, which is defined as the hate towards women, or the notion that men are far superior to women, has spread across a range of social media platforms, becoming a global epidemic.
+                  Women in the Arab world face a wide range of online misogyny, which sadly reinforces and excuses gender inequality, violence against women, and women’s undervaluation. From here
+                  came the challenge of misogyny detection in Arabic dialects.
+                  Therefore, the Arabic Misogyny Identification (ArMI) task is the first shared task that attempts to address the issue of automatic identification of Arabic online misogyny. The ArMI shared
+                  task attempts to identify the misogynistic content and recognize the different misogynistic behaviors in a collection of Arabic (MSA/dialectal) tweets.
+                  In this paper, we describe the system submitted for the ArMI shared task on misogyny detection in Arabic dialects. In this challenge, we conducted experiments on MarBERT, a BERT-based model that focused on both Dialectal Arabic (DA) and MSA. We utilized the MarBERT pretrained model that we fine-tuned on the provided training set after applying our preprocessing strategies..
+                  The rest of the paper is organized as follows: in Section 2 we introduce ArMI dataset. In Section 3, we describe our approach in tackling the problem. Then, in Section 4 we provide and discuss the results of the proposed method on Subtask-1. Section 5 concludes our work throughout this shared task.
+                  </div>
+            </div>
+            <div class="showMore"><a>Show more</a></div>
+            <hr />
+
+            <h1>Research and Work Experience</h1>
+            <hr />
+            <h3>Data Governance Manager</h3>
+            <h4><em>Sofrecom Tunisie( Part of the Orange Group )</em></h4>
+            <a href="https://www.linkedin.com/company/sofrecom-tunisie/"><img src="https://img.shields.io/badge/Sofrecom-LinkedIn-Yellow.svg" alt="LinkedIn" /></a></p>
+
+            <div style="text-align: justify">Working on Data Governance, Data Quality, Data Catalog, Data Lineage, and Data Analysis.</div>
+            <li>keywords: Deep Learning, Segmentation, Dataiku DSS, Time Series, NLP, PyTorch</li>
+            <hr />
+            <h3>Deep Learning Research Intern</h3>
+            <h4><em>MILA - Quebec AI Institute,</em></h4>
+            <a href="https://mila.quebec/"><img src="https://img.shields.io/badge/Website-Mila-purple.svg" alt="Website" /></a></p>
+            <div style="text-align: justify">Working on continual learning and clustering a memory augmented optimizer's buffer.</div>
+            <li>Keywords: Deep Learning, Critical gradient optimizer, Continual Learning, Optimization, PyTorch</li>
+            <hr />
+            <h3>Deep Learning Research Intern</h3>
+            <h4><em>Sofrecom Tunisie( Part of the Orange Group )</em></h4>
+            <a href="https://www.linkedin.com/company/sofrecom-tunisie/"><img src="https://img.shields.io/badge/Sofrecom-LinkedIn-Yellow.svg" alt="LinkedIn" /></a></p>
+            <div style="text-align: justify">Working on continual learning and clustering a memory augmented optimizer's buffer.</div>
+            <li>
+               · Implementing a Voice-Bot for skills assessment.
+            </li>
+            <li>
+               Reverse chatbot: the chatbot asks questions and evaluates the answers
+            </li>
+            <li>Developing of a web application and a a face recognition model</li>
+            <li>Keywords: Deep Learning, Critical gradient optimizer, Continual Learning, Optimization, PyTorch</li>
+            <hr />
+
+
+            <p><br /><br /></p>
+
+         </section>
+      </div>
+   </body>
+</html>
